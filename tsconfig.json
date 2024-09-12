@@ -15,7 +15,6 @@
         "out": "docs"
     },
     "include": [
-        "src/index.ts",
-        "src/index.spec.ts"
+        "src/**/*"
     ]
 }

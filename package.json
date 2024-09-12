@@ -1,6 +1,6 @@
 {
   "name": "ts-sinon-maintenance",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "sinon library extension to stub whole object and interfaces. This is a maintenance fork for BOM compliance.",
   "author": {
     "name": "Tomasz Tarnowski",
