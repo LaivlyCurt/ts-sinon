@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-        "allowImportingTsExtensions": true,
-        "emitDeclarationOnly": true,
+        "allowImportingTsExtensions": false,
+        "emitDeclarationOnly": false,
         "declaration": true,
         "declarationDir": "./dist",
         "module": "nodenext",
@@ -15,6 +15,6 @@
         "out": "docs"
     },
     "include": [
-        "src/**/*"
+        "src/index.ts"
     ]
 }

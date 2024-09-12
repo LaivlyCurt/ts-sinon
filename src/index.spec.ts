@@ -1,7 +1,7 @@
 import * as chai from "chai";
 import sinonChai from "sinon-chai";
 
-import { stubObject, stubInterface, stubConstructor } from "./index.ts";
+import { stubObject, stubInterface, stubConstructor } from "./index";
 
 chai.use(sinonChai);
 const expect = chai.expect;
