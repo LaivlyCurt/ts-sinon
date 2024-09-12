@@ -89,7 +89,8 @@ function getObjectMethods(object: object): Array<string> {
     return methods;
 }
 
-sinon['stubObject'] = stubObject;
-sinon['stubInterface'] = stubInterface;
+//sinon is sealed in this version
+//sinon['stubObject'] = stubObject;
+//sinon['stubInterface'] = stubInterface;
 
 export default sinon;

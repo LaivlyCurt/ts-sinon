@@ -1,7 +1,7 @@
 {
-  "name": "ts-sinon",
-  "version": "2.0.2",
-  "description": "sinon library extension to stub whole object and interfaces",
+  "name": "ts-sinon-maintenance",
+  "version": "2.0.3",
+  "description": "sinon library extension to stub whole object and interfaces. This is a maintenance fork for BOM compliance.",
   "author": {
     "name": "Tomasz Tarnowski",
     "email": "t.tarnowski90@gmail.com",
@@ -29,28 +29,30 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "type": "module",
   "files": [
     "/dist"
   ],
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "test": "./node_modules/.bin/mocha -r ts-node/register ./src/index.spec.ts"
+    "test": "npx ts-mocha -n loader=ts-node/esm -p tsconfig.json ./src/index.spec.ts"
   },
   "dependencies": {
-    "@types/node": "^14.6.1",
-    "@types/sinon": "^9.0.5",
-    "@types/sinon-chai": "^3.2.4",
-    "sinon": "^9.0.3"
+    "@types/node": "^22.5.4",
+    "@types/sinon": "^17.0.3",
+    "@types/sinon-chai": "^3.2.12",
+    "sinon": "^18.0.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.12",
-    "@types/mocha": "^8.0.3",
-    "chai": "^4.2.0",
-    "mocha": "^8.1.2",
-    "rimraf": "^3.0.2",
-    "sinon-chai": "^3.5.0",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.2"
+    "@types/chai": "^4.3.19",
+    "@types/mocha": "^10.0.7",
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "rimraf": "^6.0.1",
+    "sinon-chai": "^4.0.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
   }
 }
